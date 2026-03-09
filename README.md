@@ -15,6 +15,7 @@ CREATE DATABASE IF NOT EXISTS logs;
 # create table
 
 ## stukture table baru kl menggunakna s3
+```
 CREATE TABLE logs.http_logs
 (
     service String,
@@ -37,6 +38,7 @@ CREATE TABLE logs.http_logs
 )
 ENGINE = MergeTree
 ORDER BY ts;
+```
 
 # checking data clickhouse
 SHOW TABLES FROM logs;
